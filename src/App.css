@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+2:wght@400;600&display=swap');
+
+body {
+  font-family: 'Baloo 2', Arial, sans-serif;
+}
+
+.fun-heading {
+  font-family: 'Luckiest Guy', cursive, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.fun-subtitle {
+  font-family: 'Baloo 2', Arial, sans-serif;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +55,12 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.animate-bounce-slow {
+  animation: bounce 1.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
